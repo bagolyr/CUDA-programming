@@ -1053,7 +1053,7 @@
        Overriding target "ComputeMetaGenInputs" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
-Build started 2022.10.13. 7:58:34.
+Build started 2022.10.13. 8:40:41.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "Current".
        Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
@@ -1081,7 +1081,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
          VSTEL_SolutionSessionID={543370BC-0362-4940-8C6C-483392F8B849}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=3488370630
+         VSTEL_CurrentSolutionBuildID=3490897936
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={44FABBBE-DCBC-4784-9BDA-7ED89C4CEA67}
@@ -3000,4 +3000,4 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.17
+Time Elapsed 00:00:00.14
