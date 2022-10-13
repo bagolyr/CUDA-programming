@@ -1,4 +1,12 @@
 
+/*
+	Homework 2022.10.06: Matrix mult with and without shared memory
+	Homework 2022.10.13: 
+		- Optimizing parallel reduction in CUDA (review article/presentation)
+		- Try: Parallel reduction with or without shared memory -> sum of vector elements -> Input N = 10 Million (runtime, memory speed)
+		- Flop / Byte value (perf / bandwidth) Estimating GPU performance
+*/
+
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 
