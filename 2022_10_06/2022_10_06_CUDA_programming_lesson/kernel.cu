@@ -9,7 +9,10 @@
 
 #define CFG_MATRIX_MULT_SHARED_MEM false
 
-#if(CFG_MATRIX_MULT_WITHOUT_SHARED_MEM == false)
+// Thread block size
+#define BLOCK_SIZE 16
+
+#if(CFG_MATRIX_MULT_SHARED_MEM == false)
 // Matrices are stored in row-major order:
 // M(row, col) = *(M.elements + row * M.width + col)
 typedef struct {
@@ -17,9 +20,6 @@ typedef struct {
 	int height;
 	float* elements;
 } Matrix;
-
-// Thread block size
-#define BLOCK_SIZE 16
 
 // Forward declaration of the matrix multiplication kernel
 __global__ void MatMulKernel(const Matrix, const Matrix, Matrix);
@@ -316,46 +316,54 @@ void histogram_GPU() {
 
 int main() {
 	
-	int size = 100;
-	Matrix A, B, C;
-	A.width = A.height = size; A.elements = (float*)malloc(sizeof(float) * size * size);
-	B.width = B.height = size; B.elements = (float*)malloc(sizeof(float) * size * size);
-	C.width = C.height = size; C.elements = (float*)malloc(sizeof(float) * size * size);
-	float toggle = 1.0;
-	for (int i = 0; i < size * size; i++) {
-		A.elements[i] = toggle;
-		B.elements[i] = toggle;
-		C.elements[i] = 0;
-		if (i % 2 == 0)
-			toggle = 1.0;
-		else
-			toggle = 2.0;
+	int size = 256;
+
+	for (int j = 0; j < 5; j++) {
+
+		Matrix A, B, C;
+		A.width = A.height = size; A.elements = (float*)malloc(sizeof(float) * size * size);
+		B.width = B.height = size; B.elements = (float*)malloc(sizeof(float) * size * size);
+		C.width = C.height = size; C.elements = (float*)malloc(sizeof(float) * size * size);
+		float toggle = 1.0;
+		for (int i = 0; i < size * size; i++) {
+			A.elements[i] = toggle;
+			B.elements[i] = toggle;
+			C.elements[i] = 0;
+			if (i % 2 == 0)
+				toggle = 1.0;
+			else
+				toggle = 2.0;
+		}
+		time_t t; time(&t);
+		char str[26]; ctime_s(str, 26, &t);
+		printf("- size: %d - ", size);
+		clock_t begin = clock();
+		/*
+		Runtimes without shared memory:
+		- size: 256 - 220 ms
+		- size: 512 - 23 ms
+		- size: 1024 - 158 ms
+		- size: 2048 - 1117 ms
+		- size: 4096 - 9642 ms (sreen shutdown)
+		Runtimes with shared memory:
+		- size: 256 - 225 ms
+		- size: 512 - 27 ms
+		- size: 1024 - 196 ms
+		- size: 2048 - 2535 ms
+		- size: 4096 - 7460 ms
+		*/
+		MatMul(A, B, C);
+
+		clock_t end = clock();
+		double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+		printf("%.0f ms\n", time_spent * 1000);
+
+		free(A.elements); A.elements = NULL;
+		free(B.elements); B.elements = NULL;
+		free(C.elements); C.elements = NULL;
+		size *= 2;
 	}
-	time_t t; time(&t);
-	char str[26]; ctime_s(str, 26, &t);
-	printf("Calculation started at %s", str);
-	clock_t begin = clock();
-	/*
-	Runtimes without shared memory:
-	- size 100 - 232 ms
-	- size 1000 - 392 ms
-	- size 10000 - 10090 ms (screen shutdown)
 
-	Runtimes with shared memory:
-	- size 100 - 260 ms
-	- size 1000 - 389 ms
-	- size 10000 - 9697 ms (screen shutdown)
-	*/
-	MatMul(A, B, C);
-
-	clock_t end = clock();
-	double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-	printf("Runtime: %.0f ms.\n", time_spent * 1000);
-
-	free(A.elements); A.elements = NULL;
-	free(B.elements); B.elements = NULL;
-	free(C.elements); C.elements = NULL;
-	
 	//histogram_CPU();
 	//histogram_GPU();
 
