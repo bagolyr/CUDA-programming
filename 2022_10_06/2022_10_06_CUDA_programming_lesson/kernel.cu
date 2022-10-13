@@ -7,7 +7,7 @@
 #include <iostream>
 #include <stdlib.h>
 
-#define CFG_MATRIX_MULT_SHARED_MEM true
+#define CFG_MATRIX_MULT_SHARED_MEM false
 
 #if(CFG_MATRIX_MULT_WITHOUT_SHARED_MEM == false)
 // Matrices are stored in row-major order:
@@ -316,15 +316,20 @@ void histogram_GPU() {
 
 int main() {
 	
-	int size = 1000;
+	int size = 100;
 	Matrix A, B, C;
 	A.width = A.height = size; A.elements = (float*)malloc(sizeof(float) * size * size);
 	B.width = B.height = size; B.elements = (float*)malloc(sizeof(float) * size * size);
 	C.width = C.height = size; C.elements = (float*)malloc(sizeof(float) * size * size);
+	float toggle = 1.0;
 	for (int i = 0; i < size * size; i++) {
-		A.elements[i] = i;
-		B.elements[i] = i;
+		A.elements[i] = toggle;
+		B.elements[i] = toggle;
 		C.elements[i] = 0;
+		if (i % 2 == 0)
+			toggle = 1.0;
+		else
+			toggle = 2.0;
 	}
 	time_t t; time(&t);
 	char str[26]; ctime_s(str, 26, &t);
@@ -334,10 +339,12 @@ int main() {
 	Runtimes without shared memory:
 	- size 100 - 232 ms
 	- size 1000 - 392 ms
+	- size 10000 - 10090 ms (screen shutdown)
 
 	Runtimes with shared memory:
-	- size 100 - 243 ms
-	- size 1000 - 414 ms
+	- size 100 - 260 ms
+	- size 1000 - 389 ms
+	- size 10000 - 9697 ms (screen shutdown)
 	*/
 	MatMul(A, B, C);
 

@@ -1053,8 +1053,8 @@
        Overriding target "ComputeMetaGenInputs" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
-Build started 2022.10.13. 8:40:41.
-Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" on node 2 (Build target(s)).
+Build started 2022.10.13. 9:02:33.
+Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" on node 2 (Rebuild target(s)).
      1>Building with tools version "Current".
        Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -1075,33 +1075,67 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\obj\' ).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Build" depends on it):
+     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Rebuild" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
          VSTEL_SolutionSessionID={543370BC-0362-4940-8C6C-483392F8B849}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=3490897936
+         VSTEL_CurrentSolutionBuildID=3492209587
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={44FABBBE-DCBC-4784-9BDA-7ED89C4CEA67}
        Done executing task "SetEnv".
      1>Done building target "SetTelemetryEnvironmentVariables" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Build" depends on it):
-       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
-     1>Done building target "_PrepareForBuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveReferences" depends on it):
-       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
-     1>Done building target "_PrepareForReferenceResolution" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as (''!='' and 'false'=='true' and '' != 'false').
-     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveReferences" depends on it):
-     1>Done building target "BeforeResolveReferences" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "_PrepareForRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "_PrepareForRebuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "BeforeRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "BeforeRebuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "_PrepareForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Clean" depends on it):
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Delete"
+         Deleting file "x64\Debug\2022_10_.44FABBBE.tlog\2022_10_06_CUDA_programming_lesson.lastbuildstate".
+       Done executing task "Delete".
+     1>Done building target "_PrepareForClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "BeforeClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Clean" depends on it):
+     1>Done building target "BeforeClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                           ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                          Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'exe' != 'library') or
+                           ('' == '')) and
+                          Exists('obj\2022_10_06_CUDA_programming_lesson.vcxproj.UnmanagedRegistration.cache')).
+     1>Target "CoreClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Clean" depends on it):
+       Task "Delete"
+         File "x64\Debug\\TempCA\2022_10_06_CUDA_programming_lesson.pdb" doesn't exist. Skipping.
+         File "x64\Debug\\TempCA\2022_10_06_CUDA_programming_lesson.exe" doesn't exist. Skipping.
+       Done executing task "Delete".
+       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "FindUnderPath"
+         Comparison path is "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "x64\Debug\".
+       Done executing task "FindUnderPath".
+       Task "Delete"
+       Done executing task "Delete".
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+     1>Done building target "CoreClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "PrepareProjectReferences" depends on it):
        Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignProjectConfiguration"
        Done executing task "AssignProjectConfiguration".
      1>Done building target "AssignProjectConfiguration" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-       Target "AssignProjectConfiguration" skipped. Previously built successfully.
      1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "PrepareProjectReferences" depends on it):
        Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
      1>Done building target "_SplitProjectReferencesByFileExistence" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
@@ -1118,8 +1152,1188 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
                                                                And '$(GetReferenceNearestTargetFrameworkTaskSupportsTargetPlatformParameter)' != 'true') was evaluated as ('0' != '0' and '.NETFramework,Version=v4.0' != ''
                                                                And 'true' != 'true').
      1>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-     1>Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveProjectReferences" depends on it):
+     1>Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CleanReferencedProjects" depends on it):
      1>Done building target "PrepareProjectReferences" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "CleanReferencedProjects" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Clean" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' != 'true' and 'true' == 'true' and '' != '').
+     1>Done building target "CleanReferencedProjects" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "CleanPublishFolder" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Clean" depends on it):
+       Task "RemoveDir" skipped, due to false condition; ('$(PublishDir)'=='$(OutputPath)app.publish\' and Exists('$(PublishDir)')) was evaluated as ('C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\app.publish\'=='C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\app.publish\' and Exists('C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\app.publish\')).
+     1>Done building target "CleanPublishFolder" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "AfterClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Clean" depends on it):
+     1>Done building target "AfterClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "EntityClean" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+     1>Target "BeforeCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CppClean" depends on it):
+     1>Done building target "BeforeCppClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "CoreCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CppClean" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Using "CppClean" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
+       Task "CppClean"
+       Done executing task "CppClean".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+     1>Done building target "CoreCppClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "AfterCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CppClean" depends on it):
+     1>Done building target "AfterCppClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "PGInstrumentedClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CppClean" depends on it):
+       Task "Delete"
+       Done executing task "Delete".
+     1>Done building target "PGInstrumentedClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "InitializeCudaHostProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "AddCudaCompileMetadata" depends on it):
+     1>Done building target "InitializeCudaHostProperties" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "AddCudaCompileMetadata" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaClean" depends on it):
+       Building target "AddCudaCompileMetadata" completely.
+       No input files were specified.
+       Using "SanitizePaths" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\Nvda.Build.CudaTasks.v10.2.dll".
+       Task "SanitizePaths"
+       Done executing task "SanitizePaths".
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Using "SplitToItemMetadata" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\Nvda.Build.CudaTasks.v10.2.dll".
+       Task "SplitToItemMetadata"
+       Done executing task "SplitToItemMetadata".
+     1>Done building target "AddCudaCompileMetadata" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "ValidateCudaBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaClean" depends on it):
+       Task "Error" skipped, due to false condition; (!Exists($(CudaToolkitDir))) was evaluated as (!Exists(C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\)).
+     1>Done building target "ValidateCudaBuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "CudaClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CppClean" depends on it):
+       Task "MSBuild"
+         Overriding Global Properties for project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" with:
+           Platform=x64
+           Configuration=Debug
+           __CompileOut=x64\Debug\kernel.cu.obj
+           __ExcludedFromBuild=
+           __AdditionalDeps=
+           __Include=;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include
+           __NvccCompilation=compile
+           __TargetMachinePlatform=64
+           __InterleaveSourceInPTX=false
+           __CodeGeneration=arch=compute_30,code=\"sm_30,compute_30\"
+           __GPUDebugInfo=true
+           __GenerateLineInfo=false
+           __Keep=false
+           __KeepDir=x64\Debug
+           __MaxRegCount=0
+           __PtxAsOptionV=false
+           __Defines=WIN32	WIN64	_DEBUG	_CONSOLE	_MBCS
+           __Emulation=false
+           __HostDebugInfo=true
+           __FastMath=false
+           __Optimization=Od
+           __Runtime=MDd
+           __RuntimeChecks=RTC1
+           __TypeInfo=
+           __Warning=W3
+           __AdditionalOptions=
+           __CommandLineTemplate="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -ccbin "C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu [GenerateRelocatableDeviceCode] [Include] [RequiredIncludes] [InterleaveSourceInPTX] [GPUDebugInfo] [GenerateLineInfo] [Keep] [KeepDir] [MaxRegCount] [PtxAsOptionV] [TargetMachinePlatform] [NvccCompilation] [CudaRuntime] [AdditionalOptions] [HostDebugInfo] [Emulation] [FastMath] [Defines] -Xcompiler "/EHsc [Warning] /nologo [Optimization] [ProgramDataBaseFileName] /FS /Zi [RuntimeChecks] [Runtime] [TypeInfo]" [CompileOut] "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\kernel.cu" [CodeGeneration] -clean
+           __DepsOutputPath=x64\Debug\kernel.cu-1279799077.deps;
+     0>Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.props using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild
+       Property reassignment: $(MSBuildProjectExtensionsPath)="C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\obj\" (previous value: "obj\") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Microsoft.Common.props (57,5)
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\* using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       The "Configuration" property is a global property, and cannot be modified.
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(PlatformToolset)="v100" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\Platform.Default.props (29,5)
+       The "LangID" property is a global property, and cannot be modified.
+       The "SolutionDir" property is a global property, and cannot be modified.
+       Property reassignment: $(UseDebugLibraries)="true" (previous value: "false") at C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj (20,5)
+       Property reassignment: $(CharacterSet)="MultiByte" (previous value: "NotSet") at C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj (21,5)
+       Property reassignment: $(PlatformToolset)="v142" (previous value: "v100") at C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj (22,5)
+       Property reassignment: $(NETFXSDK_Version)="4.7.3" (previous value: "4.8") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.props (46,5)
+       Property reassignment: $(NETFXSDK_Version)="4.7.2" (previous value: "4.7.3") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.props (56,5)
+       Property reassignment: $(NETFXSDK_Version)="4.7.1" (previous value: "4.7.2") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.props (66,5)
+       Property reassignment: $(NETFXSDK_Version)="4.6.2" (previous value: "4.7.1") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.props (76,5)
+       Property reassignment: $(NETFXSDK_Version)="4.6.1" (previous value: "4.6.2") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.props (86,5)
+       Property reassignment: $(TargetExt)=".exe" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (28,5)
+       Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (94,5)
+       Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (95,5)
+       Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (96,5)
+       Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (97,5)
+       Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (98,5)
+       Property reassignment: $(VC_ExecutablePath_Loc)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;;;;;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\arm\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\1033;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86\1033;;;;;;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (99,5)
+       Property reassignment: $(RemoteDebuggerDeployDebugCppRuntime)="true" (previous value: "false") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (149,5)
+       Property reassignment: $(MultiProcMaxCount)="0" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props (207,5)
+       Property reassignment: $(EspXtensions)="EnumIndex.dll;CppCoreCheck.dll;" (previous value: "CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CodeAnalysis.Extensions.props (21,5)
+       Property reassignment: $(EspXtensions)="HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;" (previous value: "EnumIndex.dll;CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CodeAnalysis.Extensions.props (24,5)
+       Property reassignment: $(EspXtensions)="VariantClear.dll;HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;" (previous value: "HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CodeAnalysis.Extensions.props (27,5)
+       Property reassignment: $(EspXtensions)="ConcurrencyCheck.dll;VariantClear.dll;HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;" (previous value: "VariantClear.dll;HResultCheck.dll;EnumIndex.dll;CppCoreCheck.dll;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CodeAnalysis.Extensions.props (32,5)
+       Property reassignment: $(MsvcAnalysisToolsPath)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x86") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Analysis.props (29,5)
+       Property reassignment: $(VC_IncludePath)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.UnitTest.props (17,5)
+       Property reassignment: $(VC_LibraryPath_x86)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x86;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\lib" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x86;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.UnitTest.props (19,5)
+       Property reassignment: $(VC_LibraryPath_x64)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\lib" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.UnitTest.props (20,5)
+       Property reassignment: $(VC_LibraryPath_ARM)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\ARM;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\ARM;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\ARM;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\arm;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\lib" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\ARM;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\ARM;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\ARM;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\arm;;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.UnitTest.props (21,5)
+       Property reassignment: $(_PropertySheetDisplayName)="Multi-byte Character Support" (previous value: "Core Windows Libraries") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.MultiByteCharSupport.props (15,5)
+       Property reassignment: $(_PropertySheetDisplayName)="Application" (previous value: "Multi-byte Character Support") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Application.props (15,5)
+       Property reassignment: $(CudaToolkitDir)="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.props (19,9)
+       Property reassignment: $(CudaToolkitDir)="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\" (previous value: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.props (25,9)
+       Property reassignment: $(CudaIntDir)="x64\Debug" (previous value: "x64\Debug\") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.props (66,9)
+       The "SolutionExt" property is a global property, and cannot be modified.
+       Property reassignment: $(ExtensionsToDeleteOnClean)="*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.exe.manifest;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.tlb;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.pdb;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.exe;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.bsc;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.ilk;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.exe.intermediate.manifest;" (previous value: "*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (186,5)
+       The "DevEnvDir" property is a global property, and cannot be modified.
+       The "SolutionName" property is a global property, and cannot be modified.
+       The "SolutionFileName" property is a global property, and cannot be modified.
+       The "SolutionPath" property is a global property, and cannot be modified.
+       The "SolutionDir" property is a global property, and cannot be modified.
+       The "SolutionExt" property is a global property, and cannot be modified.
+       Property reassignment: $(AutoUnifyAssemblyReferences)="false" (previous value: "true") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (369,5)
+       Property reassignment: $(ProcessorArchitecture)="amd64" (previous value: "x64") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (506,5)
+       Property reassignment: $(DelaySign)="" (previous value: "false") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (558,5)
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (3612,5)
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets (3613,5)
+       Property reassignment: $(_CodeAnalysisTreatWarningsAsErrors)="false" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (125,5)
+       Property reassignment: $(CAExcludePath)="C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;" (previous value: "C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (235,5)
+       Property reassignment: $(CAExcludePath)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;" (previous value: "C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (236,5)
+       Property reassignment: $(CAExcludePath)="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;" (previous value: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (237,5)
+       Property reassignment: $(PrepareForBuildDependsOn)=";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables" (previous value: ";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (240,5)
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Property reassignment: $(ResolveReferencesDependsOn)="
+             
+             BeforeResolveReferences;
+             AssignProjectConfiguration;
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             ResolveNativeReferences;
+             ResolveAssemblyReferences;
+             GenerateBindingRedirects;
+             ResolveComReferences;
+             AfterResolveReferences
+           ;
+             ImplicitlyExpandDesignTimeFacades
+           " (previous value: "
+             BeforeResolveReferences;
+             AssignProjectConfiguration;
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             ResolveNativeReferences;
+             ResolveAssemblyReferences;
+             GenerateBindingRedirects;
+             ResolveComReferences;
+             AfterResolveReferences
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.NETFramework.CurrentVersion.targets (75,5)
+       Property reassignment: $(PrepareResourceNamesDependsOn)="
+                           AssignWinFXEmbeddedResource;
+                           
+             AssignTargetPaths;
+             SplitResourcesByCulture;
+             CreateManifestResourceNames;
+             CreateCustomManifestResourceNames
+           
+             " (previous value: "
+             AssignTargetPaths;
+             SplitResourcesByCulture;
+             CreateManifestResourceNames;
+             CreateCustomManifestResourceNames
+           ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets (97,7)
+       Property reassignment: $(PrepareResourcesDependsOn)="
+                       MarkupCompilePass1;
+                       AfterMarkupCompilePass1;
+                       MarkupCompilePass2ForMainAssembly;
+                       FileClassification;
+                       MainResourcesGeneration;
+                       
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+             " (previous value: "
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets (108,7)
+       Property reassignment: $(CompileDependsOn)="
+               
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ;
+               _AfterCompileWinFXInternal
+           " (previous value: "
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets (184,5)
+       Property reassignment: $(PublishBuildDependsOn)="
+                   BuildOnlySettings;
+                   PrepareForBuild;
+                   ResolveReferences;
+                   PrepareResources;
+                   ResolveKeySource;
+                   PrepareResourcesForSatelliteAssemblies;
+                   GenerateSerializationAssemblies;
+                   CreateSatelliteAssemblies;
+               " (previous value: "
+             BuildOnlySettings;
+             PrepareForBuild;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+           ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets (813,9)
+       Property reassignment: $(BuildDependsOn)="
+             EntityDeploy;
+             
+             BeforeBuild;
+             CoreBuild;
+             AfterBuild
+           
+           " (previous value: "
+             BeforeBuild;
+             CoreBuild;
+             AfterBuild
+           ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Data.Entity.targets (35,5)
+       Property reassignment: $(CleanDependsOn)="
+             
+             BeforeClean;
+             UnmanagedUnregistration;
+             CoreClean;
+             CleanReferencedProjects;
+             CleanPublishFolder;
+             AfterClean
+           ;
+             EntityClean;
+           " (previous value: "
+             BeforeClean;
+             UnmanagedUnregistration;
+             CoreClean;
+             CleanReferencedProjects;
+             CleanPublishFolder;
+             AfterClean
+           ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Data.Entity.targets (42,5)
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Property reassignment: $(PrepareResourcesDependsOn)="
+             XamlMarkupCompilePass1;
+             XamlMarkupCompilePass2;
+             
+                       MarkupCompilePass1;
+                       AfterMarkupCompilePass1;
+                       MarkupCompilePass2ForMainAssembly;
+                       FileClassification;
+                       MainResourcesGeneration;
+                       
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+              
+           " (previous value: "
+                       MarkupCompilePass1;
+                       AfterMarkupCompilePass1;
+                       MarkupCompilePass2ForMainAssembly;
+                       FileClassification;
+                       MainResourcesGeneration;
+                       
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+             ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets (35,5)
+       Property reassignment: $(CoreCompileDependsOn)="
+               DesignTimeXamlMarkupCompilation;
+               
+                 DesignTimeMarkupCompilation;
+                 
+             
+           " (previous value: "
+                 DesignTimeMarkupCompilation;
+                 
+             ") at C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets (76,5)
+       Property reassignment: $(ResolveReferencesDependsOn)="
+             
+             
+             BeforeResolveReferences;
+             AssignProjectConfiguration;
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             ResolveNativeReferences;
+             ResolveAssemblyReferences;
+             GenerateBindingRedirects;
+             ResolveComReferences;
+             AfterResolveReferences
+           ;
+             ImplicitlyExpandDesignTimeFacades
+           ;
+             ResolveTestReferences
+           " (previous value: "
+             
+             BeforeResolveReferences;
+             AssignProjectConfiguration;
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             ResolveNativeReferences;
+             ResolveAssemblyReferences;
+             GenerateBindingRedirects;
+             ResolveComReferences;
+             AfterResolveReferences
+           ;
+             ImplicitlyExpandDesignTimeFacades
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TeamTest\Microsoft.TeamTest.targets (4,5)
+       Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild
+       Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.targets\ImportAfter\* using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild
+       Property reassignment: $(ProjectLockFile)="obj\project.assets.json" (previous value: "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\obj\project.assets.json") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\NuGet\16.0\Microsoft.NuGet.targets (74,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;ResolveNuGetPackageAssets" (previous value: "
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\NuGet\16.0\Microsoft.NuGet.targets (185,5)
+       Property reassignment: $(PrepareResourcesDependsOn)="ResolveNuGetPackageAssets;
+             XamlMarkupCompilePass1;
+             XamlMarkupCompilePass2;
+             
+                       MarkupCompilePass1;
+                       AfterMarkupCompilePass1;
+                       MarkupCompilePass2ForMainAssembly;
+                       FileClassification;
+                       MainResourcesGeneration;
+                       
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+              
+           " (previous value: "
+             XamlMarkupCompilePass1;
+             XamlMarkupCompilePass2;
+             
+                       MarkupCompilePass1;
+                       AfterMarkupCompilePass1;
+                       MarkupCompilePass2ForMainAssembly;
+                       FileClassification;
+                       MainResourcesGeneration;
+                       
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+              
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\NuGet\16.0\Microsoft.NuGet.targets (186,5)
+       Property reassignment: $(DebugType)="" (previous value: "none") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (37,5)
+       Property reassignment: $(BuildDependsOn)="
+             _PrepareForBuild;
+             
+             ResolveReferences;
+             PrepareForBuild;
+             InitializeBuildStatus;
+             BuildGenerateSources;
+             BuildCompile;
+             BuildLink;
+           ;
+             AfterBuild;
+             IncrementalClean;
+             FinalizeBuildStatus;
+           " (previous value: "
+             EntityDeploy;
+             
+             BeforeBuild;
+             CoreBuild;
+             AfterBuild
+           
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (119,5)
+       Property reassignment: $(RebuildDependsOn)="
+             _PrepareForRebuild;
+             
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ;
+           " (previous value: "
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (127,5)
+       Property reassignment: $(CleanDependsOn)="
+             _PrepareForClean;
+             
+             
+             BeforeClean;
+             UnmanagedUnregistration;
+             CoreClean;
+             CleanReferencedProjects;
+             CleanPublishFolder;
+             AfterClean
+           ;
+             EntityClean;
+           ;
+           " (previous value: "
+             
+             BeforeClean;
+             UnmanagedUnregistration;
+             CoreClean;
+             CleanReferencedProjects;
+             CleanPublishFolder;
+             AfterClean
+           ;
+             EntityClean;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (132,5)
+       Property reassignment: $(_TLogProjectName)="2022_10_.44FABBBE" (previous value: "2022_10_06_CUDA_programming_lesson") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (214,5)
+       Property reassignment: $(BeforeBuildGenerateSourcesTargets)="
+             
+             ;
+             BeforeBuildGenerateSources;
+           ;
+           " (previous value: "
+             ;
+             BeforeBuildGenerateSources;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (61,5)
+       Property reassignment: $(AfterBuildGenerateSourcesTargets)="
+             
+             ;
+             AfterBuildGenerateSources;
+           ;
+             AfterBuildGenerateSourcesEvent;
+           " (previous value: "
+             ;
+             AfterBuildGenerateSources;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (72,5)
+       Property reassignment: $(BuildGenerateSourcesAction)="_BuildGenerateSourcesAction" (previous value: "Build") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (142,5)
+       Property reassignment: $(BuildCompileAction)="_BuildCompileAction" (previous value: "Build") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (143,5)
+       Property reassignment: $(BuildLinkAction)="_BuildLinkAction" (previous value: "Build") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (144,5)
+       Property reassignment: $(GetReferenceAssemblyPathsDependsOn)="_PrepareForReferenceResolution;
+               ;
+               GetWinFXPath
+           " (previous value: "
+               ;
+               GetWinFXPath
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (149,5)
+       Property reassignment: $(DetermineProjectTypeTargets)="_PrepareForReferenceResolution;
+             ;
+             AddExternalIncludDirectoriesToPaths
+           " (previous value: "
+             ;
+             AddExternalIncludDirectoriesToPaths
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (251,5)
+       Property reassignment: $(ResolveReferencesDependsOn)="_PrepareForReferenceResolution;ComputeCrtSDKReference;
+             
+             
+             BeforeResolveReferences;
+             AssignProjectConfiguration;
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             ResolveNativeReferences;
+             ResolveAssemblyReferences;
+             GenerateBindingRedirects;
+             ResolveComReferences;
+             AfterResolveReferences
+           ;
+             ImplicitlyExpandDesignTimeFacades
+           ;
+             ResolveTestReferences
+           " (previous value: "
+             
+             
+             BeforeResolveReferences;
+             AssignProjectConfiguration;
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             ResolveNativeReferences;
+             ResolveAssemblyReferences;
+             GenerateBindingRedirects;
+             ResolveComReferences;
+             AfterResolveReferences
+           ;
+             ImplicitlyExpandDesignTimeFacades
+           ;
+             ResolveTestReferences
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (311,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="_PrepareForReferenceResolution;
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;ResolveNuGetPackageAssets" (previous value: "
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;ResolveNuGetPackageAssets") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (312,5)
+       Property reassignment: $(ResolveSDKReferencesDependsOn)="_PrepareForReferenceResolution;ComputeCrtSDKReference;
+             GetInstalledSDKLocations
+           " (previous value: "
+             GetInstalledSDKLocations
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (313,5)
+       Property reassignment: $(ComputeCompileInputsTargets)="
+             
+             ;
+             GenerateTargetFrameworkMonikerAttribute;
+           ;
+             ComputeMIDLGeneratedCompileInputs;
+           " (previous value: "
+             ;
+             GenerateTargetFrameworkMonikerAttribute;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (612,5)
+       Property reassignment: $(ComputeLinkInputsTargets)="
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           " (previous value: "
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (925,5)
+       Property reassignment: $(GetTargetPathDependsOn)="_PrepareForReferenceResolution;GetResolvedWinMD;" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1095,5)
+       Property reassignment: $(ComputeCompileInputsTargets)="
+             
+             
+             ;
+             GenerateTargetFrameworkMonikerAttribute;
+           ;
+             ComputeMIDLGeneratedCompileInputs;
+           ;
+             ComputeCLInputPDBName;
+             ComputeReferenceCLInput;
+             WarnCompileDuplicatedFilename
+           " (previous value: "
+             
+             ;
+             GenerateTargetFrameworkMonikerAttribute;
+           ;
+             ComputeMIDLGeneratedCompileInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1121,5)
+       Property reassignment: $(ComputeLinkInputsTargets)="
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           " (previous value: "
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1173,5)
+       Property reassignment: $(ComputeLibInputsTargets)="
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           " (previous value: "
+             ;
+             ComputeRCGeneratedLibInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1180,5)
+       Property reassignment: $(ComputeImpLibInputsTargets)="
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeRCGeneratedImpLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           " (previous value: "
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeRCGeneratedImpLibInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1187,5)
+       Property reassignment: $(ComputeLinkInputsTargets)="
+             
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLinkInputs;
+           " (previous value: "
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1247,5)
+       Property reassignment: $(ComputeLibInputsTargets)="
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           " (previous value: "
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1262,5)
+       Property reassignment: $(ComputeImpLibInputsTargets)="
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeRCGeneratedImpLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedImpLibInputs;
+           " (previous value: "
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeRCGeneratedImpLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1277,5)
+       Property reassignment: $(ComputeLinkInputsTargets)="
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLinkInputs;
+           ;
+             ComputeLinkInputsFromProject;
+           " (previous value: "
+             
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLinkInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1308,5)
+       Property reassignment: $(ComputeLibInputsTargets)="
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ;
+             ComputeLibInputsFromProject;
+           " (previous value: "
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1326,5)
+       Property reassignment: $(ComputeImpLibInputsTargets)="
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeRCGeneratedImpLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedImpLibInputs;
+           ;
+             ComputeImpLibInputsFromProject;
+           " (previous value: "
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeRCGeneratedImpLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedImpLibInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1344,5)
+       Property reassignment: $(ComputeLinkInputsTargets)="
+             
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLinkInputs;
+           ;
+             ComputeLinkInputsFromProject;
+           ;
+             ComputeReferenceLinkInputs;
+           " (previous value: "
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLinkInputs;
+           ;
+             ComputeLinkInputsFromProject;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1488,5)
+       Property reassignment: $(ComputeLibInputsTargets)="
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ;
+             ComputeLibInputsFromProject;
+           ;
+             ComputeReferenceLibInputs;
+           " (previous value: "
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ;
+             ComputeLibInputsFromProject;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1526,5)
+       Property reassignment: $(ComputeLibInputsTargets)="
+             ComputeLibAdditionalOptions;
+             
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ;
+             ComputeLibInputsFromProject;
+           ;
+             ComputeReferenceLibInputs;
+           
+           " (previous value: "
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ;
+             ComputeLibInputsFromProject;
+           ;
+             ComputeReferenceLibInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1583,5)
+       Property reassignment: $(GetProjectInfoForReferenceDependsOn)="
+             
+             ;
+             AddPublicIncludeDirectoriesToProjectsInfoForReference;
+           ;
+             AddPublicBMIsToProjectsInfoForReference;
+             AddDeployRecipeFileToProjectsInfoForReference;
+             AddLibrariesToProjectsInfoForReference;
+           " (previous value: "
+             ;
+             AddPublicIncludeDirectoriesToProjectsInfoForReference;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (1770,5)
+       Property reassignment: $(DocumentationProjectOutputGroupDependsOn)="ResolvedXDCMake;ComputeCLCompileGeneratedXDCFiles" (previous value: "") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (2157,5)
+       Property reassignment: $(ContentFilesProjectOutputGroupDependsOn)="PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc" (previous value: "PrepareForBuild;AssignTargetPaths") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets (2223,5)
+       Property reassignment: $(ComputeCompileInputsTargets)="
+             
+             
+             
+             ;
+             GenerateTargetFrameworkMonikerAttribute;
+           ;
+             ComputeMIDLGeneratedCompileInputs;
+           ;
+             ComputeCLInputPDBName;
+             ComputeReferenceCLInput;
+             WarnCompileDuplicatedFilename
+           ;
+             ;
+             FixupCLCompileOptions;
+           " (previous value: "
+             
+             
+             ;
+             GenerateTargetFrameworkMonikerAttribute;
+           ;
+             ComputeMIDLGeneratedCompileInputs;
+           ;
+             ComputeCLInputPDBName;
+             ComputeReferenceCLInput;
+             WarnCompileDuplicatedFilename
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (302,5)
+       Property reassignment: $(BuildingProject)="true" (previous value: "false") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (1989,5)
+       Property reassignment: $(ContentFilesProjectOutputGroupDependsOn)="PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc;_CreateCopyFileItems;" (previous value: "PrepareForBuild;AssignTargetPaths;PrepareForBuild;AssignTargetPaths;MakeDirsForFxc") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (2516,5)
+       Property reassignment: $(PrepareForBuildDependsOn)="_CheckWindowsSDKInstalled;;GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables" (previous value: ";GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata;SetCABuildNativeEnvironmentVariables") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.targets (16,5)
+       Property reassignment: $(CleanDependsOn)="
+             
+             _PrepareForClean;
+             
+             
+             BeforeClean;
+             UnmanagedUnregistration;
+             CoreClean;
+             CleanReferencedProjects;
+             CleanPublishFolder;
+             AfterClean
+           ;
+             EntityClean;
+           ;
+           ;
+             CppClean
+           " (previous value: "
+             _PrepareForClean;
+             
+             
+             BeforeClean;
+             UnmanagedUnregistration;
+             CoreClean;
+             CleanReferencedProjects;
+             CleanPublishFolder;
+             AfterClean
+           ;
+             EntityClean;
+           ;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets (22,5)
+       Property reassignment: $(CppCleanDependsOn)="
+             BeforeCppClean;
+             ;
+             CoreCppClean;
+             AfterCppClean;
+           ;PGInstrumentedClean" (previous value: "
+             BeforeCppClean;
+             ;
+             CoreCppClean;
+             AfterCppClean;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets (92,5)
+       Property reassignment: $(BuildDependsOn)="SetTelemetryEnvironmentVariables;
+             _PrepareForBuild;
+             
+             ResolveReferences;
+             PrepareForBuild;
+             InitializeBuildStatus;
+             BuildGenerateSources;
+             BuildCompile;
+             BuildLink;
+           ;
+             AfterBuild;
+             IncrementalClean;
+             FinalizeBuildStatus;
+           " (previous value: "
+             _PrepareForBuild;
+             
+             ResolveReferences;
+             PrepareForBuild;
+             InitializeBuildStatus;
+             BuildGenerateSources;
+             BuildCompile;
+             BuildLink;
+           ;
+             AfterBuild;
+             IncrementalClean;
+             FinalizeBuildStatus;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets (540,5)
+       Property reassignment: $(RebuildDependsOn)="SetTelemetryEnvironmentVariables;
+             _PrepareForRebuild;
+             
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ;
+           " (previous value: "
+             _PrepareForRebuild;
+             
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets (541,5)
+       Property reassignment: $(ComputeLinkInputsTargets)="
+                   
+             
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLinkInputs;
+           ;
+             ComputeLinkInputsFromProject;
+           ;
+             ComputeReferenceLinkInputs;
+           ;
+                   ComputeCudaCompileOutput
+               " (previous value: "
+             
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLinkInputs;
+           ;
+             ComputeManifestGeneratedLinkerInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLinkInputs;
+           ;
+             ComputeLinkInputsFromProject;
+           ;
+             ComputeReferenceLinkInputs;
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets (878,9)
+       Property reassignment: $(ComputeLibInputsTargets)="
+                   
+             ComputeLibAdditionalOptions;
+             
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ;
+             ComputeLibInputsFromProject;
+           ;
+             ComputeReferenceLibInputs;
+           
+           ;
+                   ComputeCudaCompileOutput;
+                   ComputeCudaLinkOutput
+               " (previous value: "
+             ComputeLibAdditionalOptions;
+             
+             
+             
+             
+             
+             ;
+             ComputeRCGeneratedLibInputs;
+           ;
+             ComputeCustomBuildOutput;
+           ;
+             ComputeCLGeneratedLibInputs;
+           ;
+             ComputeLibInputsFromProject;
+           ;
+             ComputeReferenceLibInputs;
+           
+           ") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets (883,9)
+       Property reassignment: $(CppCleanDependsOn)="
+                   
+             BeforeCppClean;
+             ;
+             CoreCppClean;
+             AfterCppClean;
+           ;PGInstrumentedClean;
+                   CudaClean
+               " (previous value: "
+             BeforeCppClean;
+             ;
+             CoreCppClean;
+             AfterCppClean;
+           ;PGInstrumentedClean") at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets (923,9)
+       Overriding target "GetFrameworkPaths" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.NETFramework.CurrentVersion.targets".
+       Overriding target "SatelliteDllsProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "SatelliteDllsProjectOutputGroup" from project "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets".
+       Overriding target "GenerateTargetFrameworkMonikerAttribute" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GenerateTargetFrameworkMonikerAttribute" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets".
+       Overriding target "Build" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "Build" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets".
+       Overriding target "Rebuild" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "Rebuild" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets".
+       Overriding target "AfterBuild" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "AfterBuild" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets".
+       Overriding target "PrepareForBuild" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "PrepareForBuild" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "GetTargetPath" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPath" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "ComputeIntermediateSatelliteAssemblies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "ComputeIntermediateSatelliteAssemblies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "ClCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "ClCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "ResourceCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "ResourceCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "Lib" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "Lib" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "Link" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "Link" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "AllProjectOutputGroups" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "AllProjectOutputGroups" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "BuiltProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "BuiltProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "DebugSymbolsProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DebugSymbolsProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "DocumentationProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DocumentationProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "SourceFilesProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "SourceFilesProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "ContentFilesProjectOutputGroup" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "ContentFilesProjectOutputGroup" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "AllProjectOutputGroupsDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "AllProjectOutputGroupsDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "BuiltProjectOutputGroupDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "BuiltProjectOutputGroupDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "DebugSymbolsProjectOutputGroupDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DebugSymbolsProjectOutputGroupDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "DocumentationProjectOutputGroupDependencies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "DocumentationProjectOutputGroupDependencies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets".
+       Overriding target "PreBuildEvent" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "PreBuildEvent" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "PostBuildEvent" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "PostBuildEvent" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "ClCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "ClCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "Link" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "Link" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "Lib" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "Lib" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "ImpLib" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "ImpLib" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "Midl" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "Midl" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "ResourceCompile" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "ResourceCompile" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "BeforeResGen" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "BeforeResGen" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "ResGen" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "ResGen" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "GenerateSatelliteAssemblies" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GenerateSatelliteAssemblies" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "Manifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "Manifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "XdcMake" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "XdcMake" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "BscMake" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" with target "BscMake" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "ComputeMetaGenInputs" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
+       Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
+     1>Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (1) is building "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (1:2) on node 2 (CudaCleanCore target(s)).
+   1:2>Building with tools version "Current".
+       Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+   1:2>Target "AddExternalIncludDirectoriesToPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
+   1:2>Done building target "AddExternalIncludDirectoriesToPaths" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+   1:2>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaCleanCore" depends on it):
+       Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
+       Task "SetEnv"
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.1\\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.1\libnvvp\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\libnvvp;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.1\C\common\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6;C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIB=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\lib;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\um\x64;lib\um\x64;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x64;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         EXTERNAL_INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;
+       Done executing task "SetEnv".
+   1:2>Done building target "SetBuildDefaultEnvironmentVariables" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+   1:2>Target "CudaCleanCore" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (entry point):
+       Building target "CudaCleanCore" completely.
+       No input files were specified.
+       Task "CudaCompile" skipped, due to false condition; ('$(__ExcludedFromBuild)' != 'true' AND '$(__Keep)' == 'true') was evaluated as ('' != 'true' AND 'false' == 'true').
+       Task "Delete"
+         Deleting file "x64\Debug\kernel.cu-1279799077.deps".
+       Done executing task "Delete".
+   1:2>Done building target "CudaCleanCore" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+   1:2>Done Building Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (CudaCleanCore target(s)).
+     1>Done executing task "MSBuild".
+     1>Done building target "CudaClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "CppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Clean" depends on it):
+     1>Done building target "CppClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "Clean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "Clean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "SetTelemetryEnvironmentVariables" skipped. Previously built successfully.
+     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Build" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+     1>Done building target "_PrepareForBuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveReferences" depends on it):
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "_PrepareForReferenceResolution" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as (''!='' and 'false'=='true' and '' != 'false').
+     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "BeforeResolveReferences" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "PrepareProjectReferences" skipped. Previously built successfully.
        Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
      1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveReferences" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '16.0' != '10.0' and '' != '').
@@ -1179,7 +2393,6 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
      1>Target "PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
-       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MakeDir"
        Done executing task "MakeDir".
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary').
@@ -1239,15 +2452,13 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "PrepareForBuild" skipped. Previously built successfully.
      1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Build" depends on it):
-       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
-       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "WriteLinesToFile"
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "x64\Debug\2022_10_.44FABBBE.tlog\unsuccessfulbuild".
+         Creating "x64\Debug\2022_10_.44FABBBE.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
@@ -1288,20 +2499,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
        Target "_SelectedFiles" skipped. Previously built successfully.
        Target "CudaFilterSelectedFiles" skipped, due to false condition; ('@(SelectedFiles)' != '') was evaluated as ('' != '').
-     1>Target "InitializeCudaHostProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "AddCudaCompileMetadata" depends on it):
-     1>Done building target "InitializeCudaHostProperties" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-     1>Target "AddCudaCompileMetadata" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuild" depends on it):
-       Building target "AddCudaCompileMetadata" completely.
-       No input files were specified.
-       Using "SanitizePaths" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\Nvda.Build.CudaTasks.v10.2.dll".
-       Task "SanitizePaths"
-       Done executing task "SanitizePaths".
-       Task "ReadLinesFromFile"
-       Done executing task "ReadLinesFromFile".
-       Using "SplitToItemMetadata" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\Nvda.Build.CudaTasks.v10.2.dll".
-       Task "SplitToItemMetadata"
-       Done executing task "SplitToItemMetadata".
-     1>Done building target "AddCudaCompileMetadata" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "AddCudaCompileMetadata" skipped. Previously built successfully.
        Target "AddCudaCompileMetadata" skipped. Previously built successfully.
        Target "InitializeCudaHostProperties" skipped. Previously built successfully.
        Target "AddCudaCompileMetadata" skipped. Previously built successfully.
@@ -1321,79 +2519,96 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "AddCudaCompileMetadata" skipped. Previously built successfully.
      1>Target "AddCudaCompileDeps" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuild" depends on it):
-       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
-       Input files: 
-           kernel.cu
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_malloc.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memory.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_search.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdlib.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wtime.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\math.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\time.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\builtin_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\channel_descriptor.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\common_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\host_config.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\host_defines.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\math_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_device_runtime_api.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime_api.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\device_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\library_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\surface_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\texture_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.hpp
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_types.h
-           C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\kernel.cu
-       Output files: x64\Debug\kernel.cu-1279799077.deps
+       Building target "AddCudaCompileDeps" completely.
+       Output file "x64\Debug\kernel.cu-1279799077.deps" does not exist.
+       Using "GenerateDeps" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\Nvda.Build.CudaTasks.v10.2.dll".
+       Task "GenerateDeps"
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" /I. /FIcuda_runtime.h /c C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\kernel.cu 
+       Done executing task "GenerateDeps".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
      1>Done building target "AddCudaCompileDeps" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
        Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "AddCudaCompileMetadata" skipped. Previously built successfully.
      1>Target "AddCudaCompilePropsDeps" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuild" depends on it):
-       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
-       Input files: 2022_10_06_CUDA_programming_lesson.vcxproj
-       Output files: x64\Debug\kernel.cu.cache
+       Building target "AddCudaCompilePropsDeps" completely.
+       Output file "x64\Debug\kernel.cu.cache" does not exist.
+       Task "ReadLinesFromFile" skipped, due to false condition; (Exists('%(CudaCompile.PropsCacheOutputPath)')) was evaluated as (Exists('x64\Debug\kernel.cu.cache')).
+       Using "XmlPeek" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "XmlPeek"
+         Found "CudaToolkitCustomDir".
+         Found "AdditionalDeps".
+         Found "CompileOut".
+         Found "Include".
+         Found "UseHostInclude".
+         Found "Keep".
+         Found "KeepDir".
+         Found "GenerateRelocatableDeviceCode".
+         Found "NvccCompilation".
+         Found "CudaRuntime".
+         Found "NvccPath".
+         Found "RequiredIncludes".
+         Found "TargetMachinePlatform".
+         Found "InterleaveSourceInPTX".
+         Found "CodeGeneration".
+         Found "GPUDebugInfo".
+         Found "GenerateLineInfo".
+         Found "MaxRegCount".
+         Found "PtxAsOptionV".
+         Found "AdditionalCompilerOptions".
+         Found "Defines".
+         Found "UseHostDefines".
+         Found "Emulation".
+         Found "HostDebugInfo".
+         Found "FastMath".
+         Found "ProgramDataBaseFileName".
+         Found "Optimization".
+         Found "Runtime".
+         Found "RuntimeChecks".
+         Found "TypeInfo".
+         Found "Warning".
+         Found "AdditionalOptions".
+         Found "CommandLineTemplate".
+         Found "PerformDeviceLink".
+         Found "LinkOut".
+         Found "AdditionalLibraryDirectories".
+         Found "UseHostLibraryDirectories".
+         Found "AdditionalDependencies".
+         Found "UseHostLibraryDependencies".
+         Found "GPUDebugInfo".
+         Found "Optimization".
+         Found "CodeGeneration".
+         Found "TargetMachinePlatform".
+         Found "Warning".
+         Found "RuntimeChecks".
+         Found "Runtime".
+         Found "TypeInfo".
+         Found "AdditionalCompilerOptions".
+         Found "Inputs".
+         Found "AdditionalOptions".
+         Found "CommandLineTemplate".
+       Done executing task "XmlPeek".
+       Using "ReadMetadataLinesFromItems" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\Nvda.Build.CudaTasks.v10.2.dll".
+       Task "ReadMetadataLinesFromItems"
+       Done executing task "ReadMetadataLinesFromItems".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
      1>Done building target "AddCudaCompilePropsDeps" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "AddCudaCompileMetadata" skipped. Previously built successfully.
        Target "AddCudaCompilePropsDeps" skipped. Previously built successfully.
      1>Target "WriteCudaCompileTlogs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuild" depends on it):
-       Skipping target "WriteCudaCompileTlogs" because all output files are up-to-date with respect to the input files.
-       Input files: 
-           kernel.cu
-           x64\Debug\kernel.cu-1279799077.deps
-       Output files: 
-           x64\Debug\2022_10_.44FABBBE.tlog\CudaCompile.read.1u.tlog
-           x64\Debug\2022_10_.44FABBBE.tlog\CudaCompile.write.1u.tlog
+       Building target "WriteCudaCompileTlogs" completely.
+       Output file "x64\Debug\2022_10_.44FABBBE.tlog\CudaCompile.read.1u.tlog" does not exist.
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
      1>Done building target "WriteCudaCompileTlogs" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-     1>Target "ValidateCudaBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuild" depends on it):
-       Task "Error" skipped, due to false condition; (!Exists($(CudaToolkitDir))) was evaluated as (!Exists(C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\)).
-     1>Done building target "ValidateCudaBuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "ValidateCudaBuild" skipped. Previously built successfully.
      1>Target "ValidateCudaCodeGeneration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuild" depends on it):
        Building target "ValidateCudaCodeGeneration" completely.
        No input files were specified.
@@ -1423,7 +2638,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
            __CompileRelativeDir=
            __CompileFilename=kernel
            __CompileOut=x64\Debug\kernel.cu.obj
-           __ProjectDeps=
+           __ProjectDeps=2022_10_06_CUDA_programming_lesson.vcxproj
            __Deps=C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h;C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_malloc.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memcpy_s.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memory.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_search.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdlib.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wtime.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\math.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\time.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\builtin_types.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\channel_descriptor.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\common_functions.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\host_config.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\host_defines.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\math_functions.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_device_runtime_api.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime_api.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\device_types.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_functions.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\library_types.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\surface_types.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\texture_types.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.h;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.hpp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_types.h;C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\kernel.cu
            __AdditionalDependencies=
            __SelectedFilesDep=
@@ -2516,12 +3731,12 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Overriding target "ComputeMetaGenInputs" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
-     1>Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (1) is building "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
-   1:2>Building with tools version "Current".
+     1>Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (1) is building "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (1:3) on node 2 (CudaBuildCore target(s)).
+   1:3>Building with tools version "Current".
        Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
-   1:2>Target "AddExternalIncludDirectoriesToPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
-   1:2>Done building target "AddExternalIncludDirectoriesToPaths" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-   1:2>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuildCore" depends on it):
+   1:3>Target "AddExternalIncludDirectoriesToPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
+   1:3>Done building target "AddExternalIncludDirectoriesToPaths" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+   1:3>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuildCore" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
          PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.1\\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.1\libnvvp\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\libnvvp;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.1\C\common\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6;C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64;
@@ -2538,9 +3753,9 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Task "SetEnv"
          EXTERNAL_INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt;Include\um;
        Done executing task "SetEnv".
-   1:2>Done building target "SetBuildDefaultEnvironmentVariables" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+   1:3>Done building target "SetBuildDefaultEnvironmentVariables" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
-   1:2>Target "PrepareForCudaBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuildCore" depends on it):
+   1:3>Target "PrepareForCudaBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "CudaBuildCore" depends on it):
        Using "SanitizePaths" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\Nvda.Build.CudaTasks.v10.2.dll".
        Task "SanitizePaths"
        Done executing task "SanitizePaths".
@@ -2548,58 +3763,29 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Task "CudaSetEnvironmentVariable"
          Nvda.Build.CudaTasks.CudaSetEnvironmentVariable: Setting 'CUDAFE_FLAGS' to '--sdk_dir "C:\Program Files (x86)\Windows Kits\10"'
        Done executing task "CudaSetEnvironmentVariable".
-   1:2>Done building target "PrepareForCudaBuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-   1:2>Target "CudaBuildCore" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (entry point):
-       Skipping target "CudaBuildCore" because all output files are up-to-date with respect to the input files.
-       Input files: 
-           C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\kernel.cu
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
-           C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_malloc.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memory.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_search.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdlib.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wtime.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\math.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h
-           C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\ucrt\time.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\builtin_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\channel_descriptor.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\common_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\host_config.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\host_defines.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\crt\math_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_device_runtime_api.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime_api.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\device_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\driver_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\library_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\surface_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\texture_types.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.h
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.hpp
-           C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_types.h
-       Output files: x64\Debug\kernel.cu.obj
-   1:2>Done building target "CudaBuildCore" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-   1:2>Done Building Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (CudaBuildCore target(s)).
+   1:3>Done building target "PrepareForCudaBuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+   1:3>Target "CudaBuildCore" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 10.2.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (entry point):
+       Building target "CudaBuildCore" completely.
+       Output file "x64\Debug\kernel.cu.obj" does not exist.
+       Task "Message"
+         Compiling CUDA source file kernel.cu...
+       Done executing task "Message".
+       Task "Message" skipped, due to false condition; ('$(__ExcludedFromBuild)' == 'true') was evaluated as ('' == 'true').
+       Task "MakeDir" skipped, due to false condition; (!Exists('$(CompileOutDir)')) was evaluated as (!Exists('C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug')).
+       Task "MakeDir" skipped, due to false condition; ('$(__Keep)' == 'true' AND !Exists('$(__KeepDir)')) was evaluated as ('false' == 'true' AND !Exists('x64\Debug')).
+       Initializing task factory "XamlTaskFactory" from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Using "CudaCompile" task from the task factory "XamlTaskFactory".
+       Task "CudaCompile"
+         cmd.exe /C "C:\Users\ASUS\AppData\Local\Temp\tmp9c613cdd3808435180df30d891be6cba.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\kernel.cu"
+         
+         C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\kernel.cu" 
+         kernel.cu
+       Done executing task "CudaCompile".
+       Task "Delete"
+       Done executing task "Delete".
+   1:3>Done building target "CudaBuildCore" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+   1:3>Done Building Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (CudaBuildCore target(s)).
      1>Done executing task "MSBuild".
      1>Done building target "CudaBuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
@@ -2775,30 +3961,30 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
      1>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "Link"
-         Write Tracking Logs:
-         	x64\Debug\2022_10_.44FABBBE.tlog\link.write.1.tlog
-         Read Tracking Logs:
-         	x64\Debug\2022_10_.44FABBBE.tlog\link.read.1.tlog
-         Outputs for C:\USERS\ASUS\SOURCE\REPOS\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\X64\DEBUG\KERNEL.CU.OBJ:
-         	C:\USERS\ASUS\SOURCE\REPOS\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\X64\DEBUG\2022_10_06_CUDA_PROGRAMMING_LESSON.ILK
-         	C:\USERS\ASUS\SOURCE\REPOS\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\X64\DEBUG\2022_10_06_CUDA_PROGRAMMING_LESSON.EXE
-         	C:\USERS\ASUS\SOURCE\REPOS\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\X64\DEBUG\2022_10_06_CUDA_PROGRAMMING_LESSON.PDB
-         All outputs are up-to-date.
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=1148
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.exe" /INCREMENTAL /ILK:"x64\Debug\2022_10_06_CUDA_programming_lesson.ilk" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+         Tracking command:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_.44FABBBE.tlog /r C:\USERS\ASUS\SOURCE\REPOS\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\2022_10_06_CUDA_PROGRAMMING_LESSON\X64\DEBUG\KERNEL.CU.OBJ /b MSBuildConsole_CancelEvent6ab2da4044f64c01ab2cc1b41340b021  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.exe" /INCREMENTAL /ILK:"x64\Debug\2022_10_06_CUDA_programming_lesson.ilk" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+            Creating library C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.lib and object C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.exp
        Done executing task "Link".
        Task "Message"
          2022_10_06_CUDA_programming_lesson.vcxproj -> C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\x64\Debug\2022_10_06_CUDA_programming_lesson.exe
        Done executing task "Message".
        Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'True' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
                     true == 'DebugFastLink' and  != '').
        Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'True' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
                     true == 'true' and  != '').
      1>Done building target "Link" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
        Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false' and '$(CLRSupport)'!='NetCore') was evaluated as ('false'!='' and 'false'!='false' and 'false'!='NetCore').
        Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-       Target "ComputeLinkImportLibraryOutputsForClean" skipped, due to false condition; ('$(LinkSkippedExecution)' != 'true') was evaluated as ('True' != 'true').
+     1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "_Link" depends on it):
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
      1>Target "AfterLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "_Link" depends on it):
      1>Done building target "AfterLink" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
      1>Target "_Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "_BuildLinkAction" depends on it):
@@ -2809,7 +3995,13 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
      1>Target "_Manifest" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
      1>Done building target "_Manifest" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-       Target "RegisterOutput" skipped, due to false condition; ('$(LinkSkippedExecution)' != 'true' and (('$(Platform)' == 'x64' and ('$(PROCESSOR_ARCHITECTURE)' == 'AMD64' or '$(PROCESSOR_ARCHITEW6432)' == 'AMD64')) or '$(Platform)' == 'Win32')) was evaluated as ('True' != 'true' and (('x64' == 'x64' and ('x86' == 'AMD64' or 'AMD64' == 'AMD64')) or 'x64' == 'Win32')).
+     1>Target "RegisterOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
+     1>Done building target "RegisterOutput" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
      1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "_XdcMake" depends on it):
@@ -2954,7 +4146,6 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ConvertToAbsolutePath"
        Done executing task "ConvertToAbsolutePath".
-       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "FindUnderPath"
          Comparison path is "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson".
        Done executing task "FindUnderPath".
@@ -2964,7 +4155,6 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Task "FindUnderPath"
          Comparison path is "x64\Debug\".
        Done executing task "FindUnderPath".
-       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "RemoveDuplicates"
        Done executing task "RemoveDuplicates".
      1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
@@ -2975,7 +4165,6 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
        Task "FindUnderPath"
          Comparison path is "x64\Debug\".
        Done executing task "FindUnderPath".
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
        Done executing task "Delete".
        Task "RemoveDuplicates"
@@ -2990,14 +4179,17 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\ASUS\source\repos
          Touching "x64\Debug\2022_10_.44FABBBE.tlog\2022_10_06_CUDA_programming_lesson.lastbuildstate".
        Done executing task "Touch".
      1>Done building target "FinalizeBuildStatus" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (entry point):
+     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Rebuild" depends on it):
      1>Done building target "Build" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
-     1>Done Building Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (Build target(s)).
+     1>Target "AfterRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "AfterRebuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+     1>Target "Rebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (entry point):
+     1>Done building target "Rebuild" in project "2022_10_06_CUDA_programming_lesson.vcxproj".
+     1>Done Building Project "C:\Users\ASUS\source\repos\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson\2022_10_06_CUDA_programming_lesson.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.14
+Time Elapsed 00:00:04.80
